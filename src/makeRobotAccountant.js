@@ -9,7 +9,7 @@ function makeRobotAccountant() {
 
       const sum = a + b;
 
-      if (counter <= 3) {
+      if (counter <= 3 || counter % 2 !== 0) {
         return sum;
       }
 
@@ -17,7 +17,6 @@ function makeRobotAccountant() {
         return 'Bzzz... Error!';
       }
 
-      return sum;
     };
   };
 }
